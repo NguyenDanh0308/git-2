@@ -2,163 +2,152 @@
 <html lang="en">
 <head>
     <style>
-        .main {
-            width:fit-content;
-            margin: 0 auto;
-            padding:0px 60px 25px;
-            background-color: #9CCEFF;
-        }
-        .logo{
-            width:350px;
-            margin: 0 auto;
-            background-color: #00FFFF;
-            border-radius:20px;
-            box-shadow: 5px 5px 3px gray;
-        }
-        .logo td{
-            text-align:center;
-            vertical-align:middle;
-            font-weight:bold;
-            font-size:30px;
-        }
-        .logo tr:first-child td{
-            border-bottom:3px solid black;
-        }
-        .form{
-            margin: 10px auto;
-        }
-        .form td{
-            padding-right: 35px;
-            padding-left: 80px;
-            white-space: nowrap;
-        }
-        input[type="radio"]{
-            accent-color: green;
-        }
-    </style>
+    .main {
+        background-color: #99ccff;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 15px 15px 15px;
+    }
+    .logo {
+        border: 2px solid black;
+        background-color: #00ffff;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 0px #555;
+        margin: 0 auto;
+    }
+    .logo td{
+        font-size:35px;
+    }
+
+    .top-align {
+        vertical-align: top;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid black;
+    }
+    input[type="radio"]{
+        accent-color: green;
+     }
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <table class="main">
-        <tr>
-            <td>
-                <table class="logo">
+    <table class="main" cellspacing="5">
+    <tr>
+        <td colspan="4" align="center">
+            <table class="logo" cellspacing="0">
                 <tr>
-                    <td >Jackson</td>
+                    <td align="center" style="border-bottom: 2px solid black;"><b>Jackson</b></td>
                 </tr>
                 <tr>
-                    <td>Electronics</td>
+                    <td align="center"><b>Electronics</b></td>
                 </tr>
-                </table>
-                <h2 style="text-align: center;">Registration Form</h2>
-                <p style="text-align:center">Register your Jackson Electronics product here</p>
-                <table class = "form">
-            <tr>
-                <td style="padding-right: 7px;text-align: left;" >First Name:</td>
-                <td style="padding-left: 200px;">
-                    <input type="text" style="width: 30%"> Last Name: <input type="text" style="width:30%">
-                </td>
-            </tr>
-            <tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">
+            <h2 style="margin: 5px 0;">Registration Form</h2>
+            <p style="margin: 0 0 10px 0;">Register your Jackson Electronics product here</p>
+        </td>
+    </tr>
+    <tr>
+        <td>First Name:</td>
+        <td colspan="3">
+            <input type="text" size="12">
+            Last Name:
+            <input type="text" size="12">
+        </td>
+    </tr>
+    <tr>
+        <td>Address #1:</td>
+        <td colspan="3"><input type="text" size="25"></td>
+    </tr>
+    <tr>
+        <td>Address #2:</td>
+        <td colspan="3"><input type="text" size="25"></td>
+    </tr>
 
-                <td style="padding-right: 7px;text-align: left;">Address #1:</td>
-                <td style="padding-left: 200px;" colspan="3">
-                    <input type="text" style="width: 50%">
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-right:  10px;text-align: left;">Address #2:</td>
-                <td style="padding-left: 200px;" colspan="3">
-                    <input type="text" style="width: 50%">
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-right: 7px;text-align: left;">City:</td><td style="padding-left: 200px;">
-                    <input type="text" style="width:36%;">
-                    State:
-                    <input type="text" style="width:8%;">
-                   Zip:
-                   
-                  <input type="text" style="width:18%;">
-                </td>
-            </tr>
-                <tr>
-                 <td style="padding-right: 7px;text-align: left;">Country:</td><td style="padding-left: 200px;">
-                    <input type="text" style="width: 35%;" value="United States" readonly>
-                </td>
-            </tr>
-                </table>
-                <hr style="width: 85%;">
-                <table>
-            <tr>
-                <td style="padding-left: 80px;">Product:</td><td style="padding-left: 182px;">
-                    <select style="width: 70%;height: 21px;">
-                        <option>ScanMaster</option>
-                        <option></option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-left: 78px;">Date Purchased:</td>
-                <td style="padding-left: 182px;">
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-left: 78px;">Serial#:</td>
-                <td style="padding-left: 182px;">
-                    <input type="text">
-                </td>
-            </tr>
-            <table>
-            <tr>
-                <td style="vertical-align: top;;position: relative; left: 80px;">Used for:</td>
-                <td style="padding-left: 300px;">
-                    <input type="radio" name="usedfor">Home<br>
-                    <input type="radio" name="usedfor" checked>Business<br>
-                    <input type="radio" name="usedfor">Government
-                </td>
-                <td style="padding-left: 55px;position: relative;top:-12px;">
-                    <input type="radio" name="usedfor">Educational Institutions<br>
-                    <input type="radio" name="usedfor">Other
-                </td>
-            </tr>
-            </table>
-            <table>
-            <tr>
-                <td style="vertical-align: top ;position: relative;left: 75px;">System(check all that apply):</td>
-                <td style="padding-left: 175px;">
-                    <input type="checkbox">Windows<br>
-                    <input type="checkbox">Macintosh
-                </td>
-                <td style="padding-left: 68px;">
-                    <input type="checkbox">UNIX<br>
-                    <input type="checkbox">Other
-                </td>
-            </tr>
-            </table>
-            <hr style="width: 85%;">
-            <table>
-            <tr>
-                <td style="vertical-align: top;position: relative;left: 75px;">Comments?:</td>
-                <td style="padding-left: 290px;">
-                    <textarea rows="7" cols="65"></textarea>
-                </td>
-            </tr>
-            </table>
-            <table>
-            <tr>
-                <td></td>
-                <td style="padding-left: 330px;">
-                    <input type="submit" value="Click to register">
-                    <input type="reset" value="Click to cancel">
-                </td>
-            </tr>
-             </table> 
-            </td>
-        </tr>
-    </table>
+    <tr>
+        <td>City:</td>
+        <td colspan="3">
+            <input type="text" size="15">
+            State: <input type="text" size="2">
+            Zip: <input type="text" size="6">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Country:</td>
+        <td colspan="3"><input type="text" value="United States" size="15"></td>
+    </tr>
+
+    <tr>
+        <td colspan="4"><hr></td>
+    </tr>          
+    <tr>
+        <td>Product:</td>
+        <td colspan="3">
+            <select>
+                <option>ScanMaster</option>
+                <option>Danh</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Date Purchased:</td>
+        <td colspan="3"><input type="text" size="18"></td>
+    </tr>
+    <tr>
+        <td>Serial #:</td>
+        <td colspan="3"><input type="text" size="18"></td>
+    </tr>
+
+    <tr>
+        <td class="top-align">Used for:</td>
+        <td class="top-align" width="110">
+            <input type="radio" name="u"> Home <br>
+            <input type="radio" name="u" checked> Business <br>
+            <input type="radio" name="u"> Government
+        </td>
+        <td class="top-align" colspan="2">
+            <input type="radio" name="u"> Educational Institution <br>
+            <input type="radio" name="u"> Other
+        </td>
+    </tr>
+
+    <tr>
+        <td class="top-align">System (check all that apply):</td>
+        <td class="top-align">
+            <input type="checkbox"> Windows <br>
+            <input type="checkbox"> Macintosh
+        </td>
+        <td class="top-align" colspan="2">
+            <input type="checkbox"> UNIX <br>
+            <input type="checkbox"> Other
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4"><hr></td>
+    </tr>
+
+    <tr>
+        <td class="top-align">Comments?:</td>
+        <td colspan="3">
+            <textarea rows="6" cols="45"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">
+            <input type="button" value="Click to register">
+            <input type="button" value="Click to cancel">
+        </td>
+    </tr>
+</table
 </body>
-</html> 
+</html>
